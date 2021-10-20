@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @user_portfolio_history.date %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_portfolio_history.user_id %>
+</p>
+
+<p>
+  <strong>Debt value:</strong>
+  <%= @user_portfolio_history.debt_value %>
+</p>
+
+<p>
+  <strong>Equity value:</strong>
+  <%= @user_portfolio_history.equity_value %>
+</p>
+
+<p>
+  <strong>Gold value:</strong>
+  <%= @user_portfolio_history.gold_value %>
+</p>
+
+<%= link_to 'Edit', edit_user_portfolio_history_path(@user_portfolio_history) %> |
+<%= link_to 'Back', user_portfolio_histories_path %>

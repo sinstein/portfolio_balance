@@ -1,0 +1,67 @@
+<%= form_with(model: user_portfolio, local: true) do |form| %>
+  <% if user_portfolio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user_portfolio.errors.count, "error") %> prohibited this user_portfolio from being saved:</h2>
+
+      <ul>
+        <% user_portfolio.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :debt_allocation %>
+    <%= form.number_field :debt_allocation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :equity_allocation %>
+    <%= form.number_field :equity_allocation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gold_allocation %>
+    <%= form.number_field :gold_allocation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :debt_sip %>
+    <%= form.number_field :debt_sip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :equity_sip %>
+    <%= form.number_field :equity_sip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gold_sip %>
+    <%= form.number_field :gold_sip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :debt_value %>
+    <%= form.number_field :debt_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :equity_value %>
+    <%= form.number_field :equity_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gold_value %>
+    <%= form.number_field :gold_value %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

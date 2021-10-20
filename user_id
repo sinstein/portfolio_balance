@@ -1,0 +1,18 @@
+
+[1mFrom:[0m /home/sauravkothari/Development/playground/portfolio/script.rb:29 Object#allocate:
+
+    [1;34m23[0m: [32mdef[0m [1;34mallocate[0m(eq, db, gd)
+    [1;34m24[0m:     user_id = [1;34;4mHTTP[0m.post([31m[1;31m"[0m[31mhttp://localhost:3000/users[1;31m"[0m[31m[0m, [33m:form[0m => {
+    [1;34m25[0m:         [31m[1;31m'[0m[31muser[1;31m'[0m[31m[0m => {
+    [1;34m26[0m:             [31m[1;31m'[0m[31mname[1;31m'[0m[31m[0m => [1;34;4mTime[0m.now,
+    [1;34m27[0m:         }
+    [1;34m28[0m:     })
+ => [1;34m29[0m:     binding.pry
+    [1;34m30[0m:     [1;34;4mHTTP[0m.post([31m[1;31m"[0m[31mhttp://localhost:3000/user_portfolios[1;31m"[0m[31m[0m, [33m:form[0m => {
+    [1;34m31[0m:         [31m[1;31m'[0m[31muser_id[1;31m'[0m[31m[0m => user_id,
+    [1;34m32[0m:         [31m[1;31m'[0m[31mequity_value[1;31m'[0m[31m[0m => eq,
+    [1;34m33[0m:         [31m[1;31m'[0m[31mdebt_value[1;31m'[0m[31m[0m => db,
+    [1;34m34[0m:         [31m[1;31m'[0m[31mgold_value[1;31m'[0m[31m[0m => gd
+    [1;34m35[0m:     })
+    [1;34m36[0m: [32mend[0m
+

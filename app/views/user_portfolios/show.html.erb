@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Debt allocation:</strong>
+  <%= @user_portfolio.debt_allocation %>
+</p>
+
+<p>
+  <strong>Equity allocation:</strong>
+  <%= @user_portfolio.equity_allocation %>
+</p>
+
+<p>
+  <strong>Gold allocation:</strong>
+  <%= @user_portfolio.gold_allocation %>
+</p>
+
+<p>
+  <strong>Debt sip:</strong>
+  <%= @user_portfolio.debt_sip %>
+</p>
+
+<p>
+  <strong>Equity sip:</strong>
+  <%= @user_portfolio.equity_sip %>
+</p>
+
+<p>
+  <strong>Gold sip:</strong>
+  <%= @user_portfolio.gold_sip %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_portfolio.user_id %>
+</p>
+
+<p>
+  <strong>Debt value:</strong>
+  <%= @user_portfolio.debt_value %>
+</p>
+
+<p>
+  <strong>Equity value:</strong>
+  <%= @user_portfolio.equity_value %>
+</p>
+
+<p>
+  <strong>Gold value:</strong>
+  <%= @user_portfolio.gold_value %>
+</p>
+
+<%= link_to 'Edit', edit_user_portfolio_path(@user_portfolio) %> |
+<%= link_to 'Back', user_portfolios_path %>

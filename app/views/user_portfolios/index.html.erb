@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Portfolios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Debt allocation</th>
+      <th>Equity allocation</th>
+      <th>Gold allocation</th>
+      <th>Debt sip</th>
+      <th>Equity sip</th>
+      <th>Gold sip</th>
+      <th>User</th>
+      <th>Debt value</th>
+      <th>Equity value</th>
+      <th>Gold value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_portfolios.each do |user_portfolio| %>
+      <tr>
+        <td><%= user_portfolio.debt_allocation %></td>
+        <td><%= user_portfolio.equity_allocation %></td>
+        <td><%= user_portfolio.gold_allocation %></td>
+        <td><%= user_portfolio.debt_sip %></td>
+        <td><%= user_portfolio.equity_sip %></td>
+        <td><%= user_portfolio.gold_sip %></td>
+        <td><%= user_portfolio.user_id %></td>
+        <td><%= user_portfolio.debt_value %></td>
+        <td><%= user_portfolio.equity_value %></td>
+        <td><%= user_portfolio.gold_value %></td>
+        <td><%= link_to 'Show', user_portfolio %></td>
+        <td><%= link_to 'Edit', edit_user_portfolio_path(user_portfolio) %></td>
+        <td><%= link_to 'Destroy', user_portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User Portfolio', new_user_portfolio_path %>

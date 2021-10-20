@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  debt_allocation: 1
+  equity_allocation: 1
+  gold_allocation: 1
+  debt_sip: 1
+  equity_sip: 1
+  gold_sip: 1
+  user: one
+  debt_value: 1
+  equity_value: 1
+  gold_value: 1
+
+two:
+  debt_allocation: 1
+  equity_allocation: 1
+  gold_allocation: 1
+  debt_sip: 1
+  equity_sip: 1
+  gold_sip: 1
+  user: two
+  debt_value: 1
+  equity_value: 1
+  gold_value: 1

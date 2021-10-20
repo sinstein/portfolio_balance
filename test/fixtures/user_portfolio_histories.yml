@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2021-10-20
+  user: one
+  debt_value: 1
+  equity_value: 1
+  gold_value: 1
+
+two:
+  date: 2021-10-20
+  user: two
+  debt_value: 1
+  equity_value: 1
+  gold_value: 1
